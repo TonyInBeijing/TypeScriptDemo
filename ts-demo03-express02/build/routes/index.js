@@ -7,7 +7,7 @@ var express_1 = __importDefault(require("express"));
 var router = express_1.default.Router();
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.send('123');
+    res.send('456');
 });
 exports.default = router;
 // module.exports = router;
