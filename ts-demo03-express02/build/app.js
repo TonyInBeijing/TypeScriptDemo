@@ -3,21 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// var createError = require('http-errors');
 var http_errors_1 = __importDefault(require("http-errors"));
-// var express = require('express');
 var express_1 = __importDefault(require("express"));
-// var path = require('path');
 var path_1 = __importDefault(require("path"));
-// var cookieParser = require('cookie-parser');
 var cookie_parser_1 = __importDefault(require("cookie-parser"));
-// var logger = require('morgan');
 var morgan_1 = __importDefault(require("morgan"));
 // routers
 var index_1 = __importDefault(require("./routes/index"));
-// var indexRouter = require('./routes/index');
 var users_1 = __importDefault(require("./routes/users"));
-// var usersRouter = require('./routes/users');
 var app = express_1.default();
 // view engine setup
 app.set('views', path_1.default.join(__dirname, 'views'));
@@ -43,4 +36,3 @@ app.use(function (err, req, res, next) {
     res.render('error');
 });
 exports.default = app;
-// module.exports = app;

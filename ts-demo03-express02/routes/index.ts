@@ -1,11 +1,10 @@
-
-import express from 'express';
+import express, { Response, Request, NextFunction } from 'express';
 const router = express.Router();
 
 /* GET home page. */
-router.get('/', function (req: any, res: any, next: any) {
-    res.send('456');
+router.get('/', (req: Request, res: Response, next: NextFunction): void => {
+    console.log(req.query);
+    res.send('这是首页');
 });
 
 export default router
-// module.exports = router;

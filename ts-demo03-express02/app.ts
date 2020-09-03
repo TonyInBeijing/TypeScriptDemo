@@ -1,19 +1,12 @@
-// var createError = require('http-errors');
 import createError from 'http-errors';
-// var express = require('express');
-import express, { NextFunction, Response, Request, Errback, ErrorRequestHandler } from 'express';
-// var path = require('path');
+import express, { NextFunction, Response, Request, } from 'express';
 import path from 'path';
-// var cookieParser = require('cookie-parser');
 import cookieParser from 'cookie-parser';
-// var logger = require('morgan');
 import logger from 'morgan';
 
 // routers
 import indexRouter from './routes/index';
-// var indexRouter = require('./routes/index');
 import usersRouter from './routes/users';
-// var usersRouter = require('./routes/users');
 
 const app = express();
 
@@ -45,6 +38,4 @@ app.use((err: any, req: Request, res: Response, next: NextFunction): void => {
     res.status(err.status || 500);
     res.render('error');
 });
-
 export default app;
-// module.exports = app;
