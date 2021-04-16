@@ -1,6 +1,7 @@
 /**
  * @description 函数参数定义和返回类型定义
  */
+
 function getTotal1(a: number, b: number): number {
     return a + b;
 }
