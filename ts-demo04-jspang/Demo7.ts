@@ -54,5 +54,5 @@ const getResume = (person1: Teacher) => {
     person1.sex && console.log('性别是:', person1.sex);
     person1.say && console.log(person1.say());
 }
-screenResume(person1);
-getResume(person1);
+// screenResume(person1);
+// getResume(person1);
