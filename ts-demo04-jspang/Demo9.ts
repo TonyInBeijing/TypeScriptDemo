@@ -2,16 +2,14 @@
  * @Author: Tony 
  * @Date: 2021-04-19 23:05:22 
  * @Last Modified by: Tony
- * @Last Modified time: 2021-04-21 22:05:30
+ * @Last Modified time: 2021-04-24 22:17:09
  * @description constructor 构造函数
  */
-
 class Person {
     constructor(public name: string) {
         this.name = name;
     }
 }
-
 class Teacher extends Person {
     constructor(public age: number) {
         super('Tony');
