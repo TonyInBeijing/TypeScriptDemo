@@ -24,7 +24,7 @@ const myCollegeStudent = new CollegeStudent();
 // public:类的内部和类的外部都可以调用
 // private: 只允许类的内部使用
 // protected: 只允许在类的内部使用,继承时可以外部使用
-class Teacher {
+class Teacher1 {
     public name: string;
     private _name: string;
     protected _name2: string;
@@ -37,6 +37,6 @@ class CollegeTeacher extends Teacher {
         console.log(this._name2);
     }
 }
-const teacher = new Teacher();
+const teacher1 = new Teacher1();
 teacher.name = 'Tony';
 console.log(teacher.name);
